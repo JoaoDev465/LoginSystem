@@ -1,6 +1,6 @@
 ﻿using Core.Exceptions.UserExceptions;
 
-namespace Core.ValueObject;
+namespace Core.ValueObject.EntityObject;
 
 public class EmailValue:ValueObject
 {
@@ -8,7 +8,7 @@ public class EmailValue:ValueObject
     {
         Email = email;
 
-        EmailException.ThrowIfNull(email);
+        EmailException.ThrowIfNull(email,"Email is null");
         EmailException.ThrowIfNotContains(email,"Email not Equal '@gmail.com'");
     }
 

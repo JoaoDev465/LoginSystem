@@ -11,12 +11,12 @@ public class EmailException : Exception
     public static void ThrowIfNull(string? item, string message = DefaulErrorMessage )
     {
         if (string.IsNullOrEmpty(item))
-            throw new Exception(message);
+            throw new EmailException(message);
     }
 
     public static void ThrowIfNotContains(string? item, string message = DefaulErrorMessage)
     {
-        if (!string.Equals(item, "@gmail.com"))
-            throw new Exception(message);
+        if (item != null && !item.EndsWith("@gmail.com"))
+            throw new EmailException(message);
     }
 }

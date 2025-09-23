@@ -6,9 +6,9 @@ public class NameException : Exception
     
     public NameException(string message = DefaultErrorMessage): base(message){}
 
-    public static void ThrowIsNull(string? item,string message = DefaultErrorMessage)
+    public static void ThrowIfNull(string? item,string message = DefaultErrorMessage)
     {
         if (string.IsNullOrEmpty(item))
-            throw new Exception(message);
+            throw new NameException(message);
     }
 }

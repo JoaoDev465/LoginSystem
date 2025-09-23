@@ -7,11 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Contracts\" />
-    <Folder Include="Interfaces\" />
-    <Folder Include="Repositorie\" />
-    <Folder Include="Request\" />
-    <Folder Include="Response\" />
     <Folder Include="Use&amp;Cases\" />
   </ItemGroup>
 

@@ -1,6 +1,6 @@
 ﻿using Core.Exceptions.UserExceptions;
 
-namespace Core.ValueObject;
+namespace Core.ValueObject.EntityObject;
 
 public class NameValue: ValueObject
 {
@@ -8,8 +8,8 @@ public class NameValue: ValueObject
    {
       Name = name;
       
-      NameException.ThrowIsNull(name, "Name is Null");
+      NameException.ThrowIfNull(name, "Name is Null");
    }
 
-   public string Name { get; set; }
+   public string Name { get; }
 }

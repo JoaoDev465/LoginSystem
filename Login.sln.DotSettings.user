@@ -1,0 +1,22 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=1371bf54_002D7677_002D4921_002D949f_002Dba0538c9b3c4/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestEmailWhenIsNull" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestValueObjects.TestEmail.TestEmailWhenIsNull&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestValueObjects.TestEmail.TestEmailWhenNotContaingmail&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestValueObjects.TestEmail.TestEmailWhenIsNotNull&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestValueObjects.TestName.TestNameWhenIsnull&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestValueObjects.TestName.TestNameWhenIsNotNull&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestValueObjects.TestPassword.TestPasswordWhenIsNull&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestValueObjects.TestPassword.TestPasswordWhenNotNull&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestValueObjects.TestRole.TestRoleWhenIsnull&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestValueObjects.TestRole.TestRoleWhenIsnotNull&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestContract.TestPassword.TestPasswordWhenIsnull&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestContract.TestPassword.TestPasswordWhenNotRegexMatch&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestContract.TestPassword.TestPasswordWhenRegexMatchAndNotNull&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestContract.TestEmail.TesEmailWhenNotHaveGmail&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestContract.TestEmail.TesEmailWhenIsnull&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestContract.TestEmail.TestEmailWhenISvalid&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestContract.TestName.TestNameWhenIsNull&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestContract.TestEmail.TestEmailWhenIsvalid&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

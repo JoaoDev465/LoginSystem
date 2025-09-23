@@ -1,4 +1,4 @@
-﻿namespace Core.ValueObject;
+﻿namespace Core.ValueObject.EntityObject;
 
 public class IdValue: ValueObject
 {
@@ -6,5 +6,5 @@ public class IdValue: ValueObject
     {
         Id = id;
     }
-    public int Id{ get; set; }
+    public int Id{ get; }
 }

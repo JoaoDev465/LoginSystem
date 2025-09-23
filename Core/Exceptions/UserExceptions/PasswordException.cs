@@ -11,13 +11,13 @@ public class PasswordException : Exception
     public static void ThrowIsNull(string? item,string message = DefaultErrorMessage)
     {
         if (string.IsNullOrEmpty(item))
-            throw new Exception(message);
+            throw new PasswordException(message);
     }
 
     public static void ThrowIsNotMath(string? item,string message = DefaultErrorMessage)
     {
         var regex = new Regex(@"(?=.*[A-Z])(?=.*[a-z])(?=.*[@#$%&!])(?=.*[\d])([A-Za-z@#$&!\d]){8,}$");
-        if (!regex.IsMatch(item))
-            throw new Exception(message);
+        if (item != null && !regex.IsMatch(item))
+            throw new PasswordException(message);
     }
 }

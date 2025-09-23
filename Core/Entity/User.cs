@@ -1,4 +1,5 @@
 ﻿using Core.ValueObject;
+using Core.ValueObject.EntityObject;
 
 namespace Core.Entity;
 

@@ -8,7 +8,7 @@ public class RoleException: Exception
     
     public static void ThrowIsNull(string[]? item,string message = DefaultErrorMessage)
     {
-        if (string.IsNullOrEmpty(item.ToString()))
-            throw new Exception(message);
+        if (item == null || item.Length == 0)
+            throw new RoleException(message);
     }
 }

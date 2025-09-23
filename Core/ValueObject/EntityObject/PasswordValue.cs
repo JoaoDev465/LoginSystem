@@ -1,6 +1,6 @@
 ﻿using Core.Exceptions.UserExceptions;
 
-namespace Core.ValueObject;
+namespace Core.ValueObject.EntityObject;
 
 public class PasswordValue:ValueObject
 {
@@ -9,5 +9,5 @@ public class PasswordValue:ValueObject
         Password = password;
         PasswordException.ThrowIsNull(password,"Password is null");
     }
-    public string  Password { get; set; }
+    public string  Password { get;}
 }
