@@ -18,6 +18,8 @@ public class User
         Password = password;
         Roles = roles;
     }
+    
+    private User(){}
     public IdValue Id { get; set; }
     public NameValue Name { get; set; }  
     public EmailValue Email { get; set; } 

@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Use&amp;Cases\" />
+    <Compile Remove="UseCases\IUserHandler.cs" />
   </ItemGroup>
 
 </Project>
