@@ -1,4 +1,4 @@
-﻿namespace Core.ValueObject.EntityObject;
+﻿namespace Core.ValueObject.UserEntityObject;
 
 public class IdValue: ValueObject
 {

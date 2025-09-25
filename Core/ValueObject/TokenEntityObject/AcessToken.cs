@@ -1,10 +1,13 @@
-﻿namespace Core.ValueObject.TokenEntityObject;
+﻿using Core.Exceptions.TokenExceptions;
+
+namespace Core.ValueObject.TokenEntityObject;
 
 public class AcessToken : ValueObject
 {
     public AcessToken(string value)
     {
         Value = value;
+        AccessTokenException.ThrowAcessTokenNull(value,"token can't be null");
     }
     public string Value{ get; set; }
 

@@ -18,5 +18,8 @@
     &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestContract.TestEmail.TestEmailWhenISvalid&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestContract.TestName.TestNameWhenIsNull&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestContract.TestEmail.TestEmailWhenIsvalid&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestValueObjects.TokenValues.TestAccessToken.TestAcessTokenWhenTokenIsNull&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestValueObjects.TokenValues.TestTokenRefresh.TestTokenRefreshWhenTokenIsNull&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestValueObjects.TokenValues.TestTokenLifeTime.TestTokenLifeTimeWhenDateIsNull&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

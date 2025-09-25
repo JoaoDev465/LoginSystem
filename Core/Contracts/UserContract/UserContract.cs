@@ -19,6 +19,8 @@ public class UserContract
         ErrorMessage = "Password must contain 8 characters,1 especial character ex: !@#$%&," +
                        "1 long word,1 small word and 1 number")]
     public string Password { get; set; } = null!;
+
+    public string[] Roles { get; set; }
 }
 
 public class EmailValidation : ValidationAttribute

@@ -1,12 +1,13 @@
 ﻿using Core.ValueObject;
 using Core.ValueObject.EntityObject;
+using Core.ValueObject.UserEntityObject;
 
 namespace Core.Entity;
 
 public class User
 {
     public User(
-        IdValue id,
+        IdValue? id,
         NameValue name,
         EmailValue email,
         PasswordValue password,
@@ -20,8 +21,11 @@ public class User
     }
     
     private User(){}
-    public IdValue Id { get; set; }
-    public NameValue Name { get; set; }  
+
+   
+
+    public IdValue? Id { get;  set; }
+    public NameValue Name { get;set; }  
     public EmailValue Email { get; set; } 
     public RoleValue Roles { get; set; } 
     public PasswordValue Password { get; set; }

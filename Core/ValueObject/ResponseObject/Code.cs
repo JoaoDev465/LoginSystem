@@ -3,7 +3,7 @@ using Core.Exceptions.RequestExceptions;
 
 namespace Core.ValueObject.ResponseObject;
 
-public record Code
+public record Code 
 {
    public Code(int value)
    {
