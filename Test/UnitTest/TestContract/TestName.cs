@@ -15,7 +15,7 @@ public class TestName
     [Fact]
     public void TestNameWhenIsNull()
     {
-        var user = new UserContract
+        var user = new RegisterUserContract
         {
             Email = "joao@gmail.com",
             Password = "1234$$Ga",

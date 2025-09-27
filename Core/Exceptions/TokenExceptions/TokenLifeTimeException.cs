@@ -6,10 +6,13 @@ public class TokenLifeTimeException: Exception
 
     public TokenLifeTimeException( string message = DefaultErrorMessage)
         : base(message){}
+    
 
-    public static void ThrowLifeTimeNull(DateTime? createdat,DateTime? expiredat ,string message = DefaultErrorMessage)
+    public static void ThrowLifeTimeIsInvalid(DateTime? createdat, DateTime? expiredat,
+        string message = DefaultErrorMessage)
     {
-        if (createdat is null || expiredat is null)
+        if (createdat > expiredat)
             throw new TokenLifeTimeException(message);
     }
+    
 }

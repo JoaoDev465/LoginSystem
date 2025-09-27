@@ -9,8 +9,8 @@ public class TokenDateLifeTime : ValueObject
         CreatedAt = createdat;
         ExpiredAt = expiredat;
         
-        TokenLifeTimeException.ThrowLifeTimeNull(createdat,expiredat,
-            "createdat and expiredat can't be null");
+        TokenLifeTimeException.ThrowLifeTimeIsInvalid
+            (createdat,expiredat,"CreatedAt cannot be greater than expiredAt");
     }
 
     public DateTime? ExpiredAt{ get;  }

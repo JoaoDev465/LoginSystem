@@ -2,9 +2,9 @@
 
 public class IdValue: ValueObject
 {
-    public IdValue(int id)
+    public IdValue(int value)
     {
-        Id = id;
+        Value = value;
     }
-    public int Id{ get; }
+    public int Value{ get; set; }
 }

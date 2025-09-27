@@ -11,4 +11,13 @@
       <ProjectReference Include="..\Core\Core.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="microsoft.entityframeworkcore.sqlserver" Version="9.0.9" />
+      <PackageReference Include="microsoft.entityframeworkcore.tools" Version="9.0.9">
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        <PrivateAssets>all</PrivateAssets>
+      </PackageReference>
+      <PackageReference Include="system.identityModel.tokens.jwt" Version="8.14.0" />
+    </ItemGroup>
+
 </Project>

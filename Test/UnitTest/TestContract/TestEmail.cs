@@ -15,7 +15,7 @@ public class TestEmail
     [Fact]
     public void TesEmailWhenIsnull()
     {
-        var user = new UserContract { Email = null };
+        var user = new RegisterUserContract { Email = null };
 
         var result = ValidationResults(user);
 
@@ -24,7 +24,7 @@ public class TestEmail
     [Fact]
     public void TesEmailWhenNotHaveGmail()
     {
-        var user = new UserContract { Email = "joao"};
+        var user = new RegisterUserContract { Email = "joao"};
 
         var result = ValidationResults(user);
 
@@ -34,7 +34,7 @@ public class TestEmail
     [Fact]
     public void TestEmailWhenIsvalid()
     {
-        var user = new UserContract
+        var user = new RegisterUserContract
         {
             Email = "joao@gmail.com",
             Name = "joao",

@@ -4,6 +4,6 @@ namespace Core.Interfaces;
 
 public interface ITokenGenerator
 {
-   string GenerateToken(User user);
+   Token GenerateToken(User user);
    string ValidateToken(Token token);
 }
