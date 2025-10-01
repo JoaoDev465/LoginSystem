@@ -1,13 +1,13 @@
 ﻿using Core.Exceptions.UserExceptions;
 
-namespace Core.ValueObject.EntityObject;
+namespace Core.ValueObject.UserEntityObject;
 
 public class PasswordValue:ValueObject
 {
-    public PasswordValue(string password)
+    public PasswordValue(string value)
     {
-        Password = password;
-        PasswordException.ThrowIsNull(password,"Password is null");
+        Password = value;
+        PasswordException.ThrowIsNull(value,"Password is null");
     }
     public string  Password { get;}
 }

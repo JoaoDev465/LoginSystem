@@ -8,9 +8,11 @@
 
   <ItemGroup>
     <Compile Remove="UseCases\IUserHandler.cs" />
+    <Compile Remove="ValueObject\TokenEntityObject\Id.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="9.0.9" />
     <PackageReference Include="secureIdentity" Version="1.0.4" />
   </ItemGroup>
 

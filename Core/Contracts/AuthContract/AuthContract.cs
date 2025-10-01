@@ -2,7 +2,7 @@
 
 namespace Core.Contracts.UserContract;
 
-public class RegisterUserContract
+public class AuthContract
 {
     public int Id{ get; set; }
 

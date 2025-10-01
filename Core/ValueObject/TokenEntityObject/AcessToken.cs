@@ -7,7 +7,7 @@ public class AcessToken : ValueObject
     public AcessToken(string value)
     {
         Value = value;
-        AccessTokenException.ThrowAcessTokenNull(value,"token can't be null");
+        AccessTokenException.ThrowAccessTokenIsNull(value,"token can't be null");
     }
     public string Value{ get; set; }
 

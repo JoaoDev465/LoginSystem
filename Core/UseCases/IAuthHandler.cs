@@ -3,7 +3,6 @@ using Core.Entity;
 using Core.Interfaces;
 using Core.Response;
 using Core.ValueObject;
-using Core.ValueObject.EntityObject;
 using Core.ValueObject.UserEntityObject;
 using SecureIdentity.Password;
 
@@ -24,7 +23,7 @@ public class AuthHandler
         _authRepositorie = repositorie;
     }
     
-   public async Task<ResponseModel<Token>> Login(RegisterUserContract contract)
+   public async Task<ResponseModel<Token>> Login(AuthContract contract)
    {
        var user = await _userRepositorie.GetUSerByEmail(contract.Email);
        if(user.Email is null)
@@ -41,7 +40,7 @@ public class AuthHandler
 
    }
 
-   public async Task<ResponseModel<User>> Register(RegisterUserContract contract)
+   public async Task<ResponseModel<User>> Register(AuthContract contract)
    {
      var password =  PasswordHasher.Hash(contract.Password);
        

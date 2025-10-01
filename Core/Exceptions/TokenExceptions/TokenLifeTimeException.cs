@@ -2,7 +2,7 @@
 
 public class TokenLifeTimeException: Exception
 {
-    private const string DefaultErrorMessage = "Row Is invalid";
+    private const string DefaultErrorMessage = "Token life Time was expired";
 
     public TokenLifeTimeException( string message = DefaultErrorMessage)
         : base(message){}

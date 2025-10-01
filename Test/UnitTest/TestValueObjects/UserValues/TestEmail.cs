@@ -1,6 +1,6 @@
 ﻿using Core.Exceptions.UserExceptions;
 using Core.ValueObject;
-using Core.ValueObject.EntityObject;
+using Core.ValueObject.UserEntityObject;
 
 namespace Test.UnitTest.TestValueObjects;
 

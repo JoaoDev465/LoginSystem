@@ -1,14 +1,14 @@
 ﻿using Core.Exceptions.UserExceptions;
 
-namespace Core.ValueObject.EntityObject;
+namespace Core.ValueObject.UserEntityObject;
 
 public class NameValue: ValueObject
 {
-   public NameValue(string name)
+   public NameValue(string value)
    {
-      Name = name;
+      Name = value;
       
-      NameException.ThrowIfNull(name, "Name is Null");
+      NameException.ThrowIfNull(value, "Name is Null");
    }
 
    public string Name { get; }

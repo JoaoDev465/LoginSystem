@@ -11,4 +11,10 @@ public class Context: DbContext
 
     public DbSet<User> User { get; set; }
     public DbSet<Token> Token { get; set; }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.ApplyConfiguration(new FluentUser());
+        modelBuilder.ApplyConfiguration(new FluentToken());
+    }
 }

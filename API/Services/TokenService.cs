@@ -7,6 +7,7 @@ using Core.Interfaces;
 using Core.ValueObject.TokenEntityObject;
 using Core.ValueObject.UserEntityObject;
 using Microsoft.IdentityModel.Tokens;
+using IdValue = Core.ValueObject.UserEntityObject.IdValue;
 
 namespace _5442.Services;
 
@@ -22,7 +23,7 @@ public class TokenService : ITokenGenerator
     {
         string refreshtoken = Guid.NewGuid().ToString("N");
         var createdat = DateTime.UtcNow;
-        var expiredat = DateTime.Now.AddHours(2);
+        var expiredat = DateTime.UtcNow.AddHours(2);
         
         var claims = new[]
         {
@@ -44,7 +45,7 @@ public class TokenService : ITokenGenerator
         
          return  new Token(
             id:null,
-            userId: user.Id.Value
+            userId: new IdValue(user.Id.Value)
             ,accessToken: new AcessToken(acessToken),
             tokenRefresh: new TokenRefresh(refreshtoken),
             lifetime: new TokenDateLifeTime(createdat,expiredat));
