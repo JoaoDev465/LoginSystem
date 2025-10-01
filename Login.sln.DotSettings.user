@@ -1,5 +1,5 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=1371bf54_002D7677_002D4921_002D949f_002Dba0538c9b3c4/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestEmailWhenIsNull" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=1371bf54_002D7677_002D4921_002D949f_002Dba0538c9b3c4/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestEmailWhenIsNull" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestValueObjects.TestEmail.TestEmailWhenIsNull&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestValueObjects.TestEmail.TestEmailWhenNotContaingmail&lt;/TestId&gt;&#xD;
@@ -30,10 +30,12 @@
     &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestRepositorie.TokenRepositorie.TokenAdd.TestWhenUserPropertyIsInvalid&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestRepositorie.TestTokenUpdate.TestUpdateWhenResultIsValid&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestUse_Case.AuthCaseTest.TestWhenIsAGoodResult&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestTokenService.TestWhenResultIsOkay&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ef655942_002D963b_002D4f48_002D99fe_002D347c00646030/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestUpdateWhenResultIsValid" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ef655942_002D963b_002D4f48_002D99fe_002D347c00646030/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestUpdateWhenResultIsValid" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestUse_Case.AuthCaseTest.TestWhenIsAGoodResult&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestTokenService.TestWhenResultIsOkay&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

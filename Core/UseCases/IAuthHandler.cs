@@ -1,4 +1,5 @@
-﻿using Core.Contracts.UserContract;
+﻿using Core.Contracts.AuthContract;
+using Core.Contracts.UserContract;
 using Core.Entity;
 using Core.Interfaces;
 using Core.Response;
@@ -23,7 +24,7 @@ public class AuthHandler
         _authRepositorie = repositorie;
     }
     
-   public async Task<ResponseModel<Token>> Login(AuthContract contract)
+   public async Task<ResponseModel<Token>> Login(LoginContract contract)
    {
        var user = await _userRepositorie.GetUSerByEmail(contract.Email);
        if(user.Email is null)
@@ -40,7 +41,7 @@ public class AuthHandler
 
    }
 
-   public async Task<ResponseModel<User>> Register(AuthContract contract)
+   public async Task<ResponseModel<User>> Register(RegisterContract contract)
    {
      var password =  PasswordHasher.Hash(contract.Password);
        

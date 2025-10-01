@@ -1,4 +1,5 @@
 ﻿using _5442.Services;
+using Core.Contracts.AuthContract;
 using Core.Contracts.UserContract;
 using Core.UseCases;
 using Data.Db;
@@ -20,7 +21,13 @@ public class AuthCaseTest
         var tokenRepo = new TokenRepositorie(context);
         var tokenservice = new TokenService();
 
-        var contract = new AuthContract
+        var logincontract = new LoginContract
+        {
+            Email = "joao@gmail.com",
+            Password = "galo1234$$Ga"
+        };
+
+        var contract = new RegisterContract
         {
             Id = 1,
             Name = "joao",
@@ -33,7 +40,7 @@ public class AuthCaseTest
 
         var register = await handler.Register(contract);
 
-        var login = await handler.Login(contract);
+        var login = await handler.Login(logincontract);
         
         
          Assert.Equal("Ok",login.Message);

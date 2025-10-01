@@ -18,7 +18,7 @@ public class TestPassword
     public void TestPasswordWhenIsnull()
     {
 
-        var user = new AuthContract { Password = null };
+        var user = new RegisterContract { Password = null };
 
         var result = ValidationResults(user);
 
@@ -29,7 +29,7 @@ public class TestPassword
     [Fact]
     public void TestPasswordWhenNotRegexMatch()
     {
-        var user = new AuthContract { Password = "1234olae"  };
+        var user = new RegisterContract { Password = "1234olae"  };
 
         var result = ValidationResults(user);
 
@@ -41,7 +41,7 @@ public class TestPassword
     [Fact]
     public void TestPasswordWhenRegexMatchAndNotNull()
     {
-        var user = new AuthContract { Password = "1234$$Ga"  };
+        var user = new RegisterContract { Password = "1234$$Ga"  };
         var regex = new Regex(@"^(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$&])(?=.*\d)[A-Za-z!@#$&\d]{8,}$");
 
         var result = regex.IsMatch(user.Password);

@@ -11,7 +11,7 @@ using IdValue = Core.ValueObject.UserEntityObject.IdValue;
 
 namespace _5442.Services;
 
-public class TokenService : ITokenGenerator
+public partial class TokenService : ITokenGenerator
 {
     private readonly JwtSecurityTokenHandler _securityTokenHandler;
 
@@ -25,19 +25,14 @@ public class TokenService : ITokenGenerator
         var createdat = DateTime.UtcNow;
         var expiredat = DateTime.UtcNow.AddHours(2);
         
-        var claims = new[]
-        {
-            new Claim(ClaimTypes.Email, user.Email.Email),
-            new Claim(ClaimTypes.Name,user.Name.Name)
-        };
         var secret = "banana1234oqewnoqenocdjeqncdowqjneoqewjnqoejncoqqecqe";
         var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secret));
         var security = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
         var token = new JwtSecurityToken(
-            claims: claims,
+            claims: GenerateClaims(user),
             notBefore: createdat,
-            expires: DateTime.UtcNow.AddHours(2),
+            expires: expiredat,
             signingCredentials:security
         );
         
@@ -52,17 +47,17 @@ public class TokenService : ITokenGenerator
         
     }
 
-    public string ValidateToken(Token token)
+    public ClaimsPrincipal? ValidateToken(Token token)
     {
-        if(token.IsRevoked)
-            return String.Empty;
+        if (token.IsRevoked)
+            return null;
         
         var secret = "banana1234oqewnoqenocdjeqncdowqjneoqewjnqoejncoqqecqe";
         var key = Encoding.UTF8.GetBytes(secret);
 
         try
         {
-            _securityTokenHandler.ValidateToken(token.AccessToken.Value, new TokenValidationParameters
+          var principal =  _securityTokenHandler.ValidateToken(token.AccessToken.Value, new TokenValidationParameters
             {
                 ValidateIssuer = false,
                 ValidateAudience = false,
@@ -70,14 +65,13 @@ public class TokenService : ITokenGenerator
                 ValidateIssuerSigningKey = true,
                 IssuerSigningKey = new SymmetricSecurityKey(key)
 
-            }, out SecurityToken validatedToken);
+            }, out _);
 
-            var jwttoekn = (JwtSecurityToken)validatedToken;
-            return jwttoekn.Claims.First(x => x.Type == ClaimTypes.Email).Value;
+            return principal;
         }
         catch (Exception e)
         {
-            return String.Empty;
+            return null;
         }
     }
 }
