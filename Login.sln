@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# 
+#
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{CB9E5CE5-1217-44F7-99C5-676DE9A3CA20}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{A898426E-4439-424B-8329-2E98BACFABF4}"
@@ -8,6 +8,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{5A89E6D7-BB74-4146-9DAB-9AD7A581C24B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{F1DB0D54-29B8-48D3-B252-34579C08F8E4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "github", "github", "{CB16FFCE-FFAE-427A-9944-DDCB37452B93}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,5 +33,7 @@ Global
 		{F1DB0D54-29B8-48D3-B252-34579C08F8E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1DB0D54-29B8-48D3-B252-34579C08F8E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1DB0D54-29B8-48D3-B252-34579C08F8E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
 EndGlobal

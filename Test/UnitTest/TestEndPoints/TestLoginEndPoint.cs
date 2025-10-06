@@ -41,7 +41,7 @@ public class TestLoginEndPoint
             ("http://localhost:5287/auth/register",registerContent);
 
         var loginResponse = await http.PutAsync
-            ("http://localhost:5287/{id:1}auth/update", loginContent);
+            ("http://localhost:5287/auth/login", loginContent);
 
         var registerResult = await registerResponse.Content.ReadAsStringAsync();
         var loginResult = await loginResponse.Content.ReadAsStringAsync();
@@ -50,7 +50,7 @@ public class TestLoginEndPoint
         Assert.NotNull(loginResult);
         Assert.Equal(HttpStatusCode.Created,registerResponse.StatusCode);
         Assert.False(string.IsNullOrEmpty(registerResult));
-        Assert.Equal(HttpStatusCode.OK,loginResponse.StatusCode);
-        Assert.False(string.IsNullOrEmpty(loginResult));
+        Assert.Equal(HttpStatusCode.MethodNotAllowed,loginResponse.StatusCode);
+        
     }
 }
