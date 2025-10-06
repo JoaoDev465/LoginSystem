@@ -14,9 +14,9 @@ public record Code
    public bool IsSucess => Value is >= 200 and <= 299;
    public bool IsError => Value is >= 400 and <= 499;
 
-   [JsonIgnore] public static Code? Ok => new(200);
+   [JsonIgnore] public static Code Ok => new(200);
    [JsonIgnore]public static Code Created => new(201);
-   [JsonIgnore]public static Code? BadRequest => new(400);
+   [JsonIgnore]public static Code BadRequest => new(400);
    [JsonIgnore]public static Code NotFound => new(404);
    [JsonIgnore]public static Code InternalError => new(500);
 

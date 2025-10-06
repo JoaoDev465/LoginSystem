@@ -29,6 +29,9 @@
             "projectReferences": {
               "C:\\Users\\User\\RiderProjects\\Login\\Core\\Core.csproj": {
                 "projectPath": "C:\\Users\\User\\RiderProjects\\Login\\Core\\Core.csproj"
+              },
+              "C:\\Users\\User\\RiderProjects\\Login\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\User\\RiderProjects\\Login\\Data\\Data.csproj"
               }
             }
           }
@@ -48,6 +51,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
             "microsoft.entityframeworkcore.sqlserver": {
               "target": "Package",
               "version": "[9.0.9, )"
@@ -284,6 +291,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
               "version": "[9.0.9, )"

@@ -1,6 +1,5 @@
 ﻿using _5442.Services;
 using Core.Contracts.AuthContract;
-using Core.Contracts.UserContract;
 using Core.UseCases;
 using Data.Db;
 using Data.Repositories;

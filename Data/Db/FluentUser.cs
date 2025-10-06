@@ -15,7 +15,7 @@ public class FluentUser: IEntityTypeConfiguration<User>
             .Property(x => x.Id)
             .HasConversion(id => id!.Value,
                 id => new IdValue(id))
-            .ValueGeneratedOnAdd();
+            .ValueGeneratedOnAdd().UseIdentityColumn();
 
         builder
             .Property(x => x.Email)

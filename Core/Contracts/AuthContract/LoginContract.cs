@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using Core.Contracts.UserContract;
 
 namespace Core.Contracts.AuthContract;
 

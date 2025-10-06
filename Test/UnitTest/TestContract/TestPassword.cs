@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Text.RegularExpressions;
-using Core.Contracts.UserContract;
+using Core.Contracts.AuthContract;
 using Microsoft.VisualStudio.TestPlatform.ObjectModel;
 
 namespace Test.UnitTest.TestContract;

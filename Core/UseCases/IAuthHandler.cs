@@ -1,9 +1,7 @@
 ﻿using Core.Contracts.AuthContract;
-using Core.Contracts.UserContract;
 using Core.Entity;
 using Core.Interfaces;
 using Core.Response;
-using Core.ValueObject;
 using Core.ValueObject.UserEntityObject;
 using SecureIdentity.Password;
 
@@ -24,24 +22,24 @@ public class AuthHandler
         _authRepositorie = repositorie;
     }
     
-   public async Task<ResponseModel<Token>> Login(LoginContract contract)
+   public async Task<ResponseModel<Token?>> Login(LoginContract contract)
    {
        var user = await _userRepositorie.GetUSerByEmail(contract.Email);
-       if(user.Email is null)
-           return ResponseModel<Token>.NotFound(null,"not users found");
+       if(user is null)
+           return ResponseModel<Token?>.NotFound(null,"not users found");
        
        if (!PasswordHasher.Verify(user.Password.Password, contract.Password)) 
-           return ResponseModel<Token>.BadRequest(null,"invalid password");
+           return ResponseModel<Token?>.BadRequest(null,"invalid password");
 
        var token = _tokenGenerator.GenerateToken(user);
 
-       await _authRepositorie.AddAsync(token);
+       await _authRepositorie.RefreshToken(token);
 
-       return ResponseModel<Token>.Success(token);
+       return ResponseModel<Token?>.Success(token);
 
    }
 
-   public async Task<ResponseModel<User>> Register(RegisterContract contract)
+   public async Task<ResponseModel<User?>> Register(RegisterContract contract)
    {
      var password =  PasswordHasher.Hash(contract.Password);
        
@@ -52,9 +50,10 @@ public class AuthHandler
                new RoleValue(contract.Roles));
      
         await _userRepositorie.Addasync(user);
-        _tokenGenerator.GenerateToken(user);
+     var token =   _tokenGenerator.GenerateToken(user);
+        await _authRepositorie.AddAsync(token);
 
-        return  ResponseModel<User>.Created(user);
+        return  ResponseModel<User?>.Created(user);
    }
 
 

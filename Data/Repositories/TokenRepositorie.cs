@@ -1,5 +1,4 @@
-﻿using Core.Contracts.UserContract;
-using Core.Entity;
+﻿using Core.Entity;
 using Core.Interfaces;
 using Data.Db;
 using Microsoft.EntityFrameworkCore;
@@ -28,5 +27,12 @@ public class TokenRepositorie: IAuthRepositorie
     {
        _context.Token.Update(token);
        await _context.SaveChangesAsync();
+    }
+
+    public async  Task RevokeByUserId(int id)
+    {
+        var token =  await _context.Token.FirstOrDefaultAsync(x =>x.UserId.Value == id);
+
+        if (token != null) _context.Token.Remove(token);
     }
 }

@@ -31,11 +31,21 @@
     &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestRepositorie.TestTokenUpdate.TestUpdateWhenResultIsValid&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestUse_Case.AuthCaseTest.TestWhenIsAGoodResult&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestTokenService.TestWhenResultIsOkay&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestEndPoints.TestRegister.TestRegisterEndPoint&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ef655942_002D963b_002D4f48_002D99fe_002D347c00646030/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestUpdateWhenResultIsValid" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a45670c0_002D61ba_002D4fa9_002D9015_002D35f0bb263242/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestRegisterEndPoint" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestEndPoints.TestRegister.TestRegisterEndPoint&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestEndPoints.TestUserUpdate.EndPointUpdate&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ef655942_002D963b_002D4f48_002D99fe_002D347c00646030/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestUpdateWhenResultIsValid" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestUse_Case.AuthCaseTest.TestWhenIsAGoodResult&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestTokenService.TestWhenResultIsOkay&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestEndPoints.TestRegister.TestRegisterEndPoint&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestEndPoints.TestLoginEndPoint.LoginEndPoint&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5A89E6D7-BB74-4146-9DAB-9AD7A581C24B::net8.0::Test.UnitTest.TestEndPoints.TestUserUpdate.EndPointUpdate&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

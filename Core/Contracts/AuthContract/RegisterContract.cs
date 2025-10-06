@@ -1,10 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Core.Contracts.UserContract;
+namespace Core.Contracts.AuthContract;
 
 public class RegisterContract
 {
-    public int Id{ get; set; }
+    public int Id { get; set; } = 0;
 
     [Required(ErrorMessage = "name's row can't be null")]
     public string Name { get; set; } = null!;
@@ -20,7 +20,7 @@ public class RegisterContract
                        "1 long word,1 small word and 1 number")]
     public string Password { get; set; } = null!;
 
-    public string[] Roles { get; set; }
+    public string[]? Roles { get; set; }
 }
 
 public class EmailValidation : ValidationAttribute

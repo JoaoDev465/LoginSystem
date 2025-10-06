@@ -23,10 +23,10 @@ public class ResponseModel<T>
         new ResponseModel<T>(data, "Created", Code.Created);
     
     
-    public static ResponseModel<T> BadRequest(T? data,string message) =>
+    public static ResponseModel<T> BadRequest(T? data,string? message) =>
         new ResponseModel<T>(data, "Bad request", Code.BadRequest);
     
-    public static ResponseModel<T> NotFound(T? data, string message) =>
+    public static ResponseModel<T> NotFound(T? data, string? message) =>
         new ResponseModel<T>(data, "Not Found", Code.NotFound);
     
     public static ResponseModel<T> InternalError(T? data) =>

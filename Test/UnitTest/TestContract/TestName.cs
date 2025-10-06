@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using Core.Contracts.UserContract;
+using Core.Contracts.AuthContract;
 
 namespace Test.UnitTest.TestContract;
 

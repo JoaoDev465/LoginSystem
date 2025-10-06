@@ -1,0 +1,6 @@
+namespace _5442.Common.ExtensiveApp;
+
+public class Authentication
+{
+    
+}
