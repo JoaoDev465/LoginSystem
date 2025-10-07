@@ -28,7 +28,7 @@ jobs:
         run : dotnet build --configuration Debug
        
      - name: dotnet test
-       run : dotnet test --verbosity normal .\Test
+       run : dotnet test --verbosity normal 
        
       
       
