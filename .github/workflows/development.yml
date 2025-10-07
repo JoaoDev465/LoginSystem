@@ -17,12 +17,12 @@ jobs:
        uses: actions/setup-dotnet@v4
        with:
           dotnet-version: 8.0.x
-         
-     - name: dotnet clean
-       run: dotnet clean
        
      - name: dotnet restore
        run : dotnet restore
+       
+     - name: dotnet clean
+       run: dotnet clean 
      
      -  name: dotnet build
         run : dotnet build --configuration Debug
