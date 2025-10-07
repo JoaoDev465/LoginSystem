@@ -3,7 +3,7 @@ name: development
 on:
   push:
     branches: 
-      -development
+      - development
     
 jobs:
   build:
@@ -16,7 +16,7 @@ jobs:
      - name: setup dotnet
        uses: actions/setup-dotnet@v4
        with:
-         version: 8.0.x
+          dotnet-version: 8.0.x
          
      - name: dotnet clean
        run: dotnet clean
