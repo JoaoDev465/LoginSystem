@@ -14,9 +14,11 @@ namespace _5442.Services;
 public partial class TokenService : ITokenGenerator
 {
     private readonly JwtSecurityTokenHandler _securityTokenHandler;
+    private readonly IConfiguration _configuration;
 
-    public TokenService()
+    public TokenService(IConfiguration configuration)
     {
+        _configuration = configuration;
         _securityTokenHandler = new JwtSecurityTokenHandler();
     }
     public Token GenerateToken(User user)
@@ -24,8 +26,8 @@ public partial class TokenService : ITokenGenerator
         string refreshtoken = Guid.NewGuid().ToString("N");
         var createdat = DateTime.UtcNow;
         var expiredat = DateTime.UtcNow.AddHours(2);
-        
-        var secret = "banana1234oqewnoqenocdjeqncdowqjneoqewjnqoejncoqqecqe";
+
+        var secret = _configuration.GetValue<string>("Jwt:Secrets");
         var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secret));
         var security = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
@@ -51,8 +53,8 @@ public partial class TokenService : ITokenGenerator
     {
         if (token.IsRevoked)
             return null;
-        
-        var secret = "banana1234oqewnoqenocdjeqncdowqjneoqewjnqoejncoqqecqe";
+
+        var secret = _configuration.GetValue<string>("Jwt:Secrets");
         var key = Encoding.UTF8.GetBytes(secret);
 
         try

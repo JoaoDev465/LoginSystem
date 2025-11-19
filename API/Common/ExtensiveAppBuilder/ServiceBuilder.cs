@@ -11,15 +11,16 @@ public static class ServiceBuilder
 {
     public static void Services(this WebApplicationBuilder builder)
     {
+        var connection = builder.Configuration.GetConnectionString("ConnectionString");
         builder.Services.AddTransient<AuthHandler>();
         builder.Services.AddTransient<UpdateUserHandler>();
         builder.Services.AddDbContext<Context>(options =>
         {
-            options.UseInMemoryDatabase(Guid.NewGuid().ToString());
+            options.UseSqlServer(connection);
+            
         });
-
-        builder.Services.AddScoped<IUserRepositorie,UserRepositorie>();
-        builder.Services.AddScoped<ITokenGenerator, TokenService>();
-        builder.Services.AddScoped<IAuthRepositorie,TokenRepositorie>();
+            builder.Services.AddScoped<IUserRepositorie, UserRepositorie>();
+            builder.Services.AddScoped<ITokenGenerator, TokenService>();
+            builder.Services.AddScoped<IAuthRepositorie, TokenRepositorie>();
     }
 }

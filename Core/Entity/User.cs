@@ -19,6 +19,17 @@ public class User
         Roles = roles;
     }
     
+    public User(
+        NameValue name,
+        EmailValue email,
+        PasswordValue password,
+        RoleValue roles)
+    {
+        Name = name;
+        Email = email;
+        Password = password;
+        Roles = roles;
+    }
     private User(){}
 
    

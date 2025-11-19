@@ -43,7 +43,7 @@ public class AuthHandler
    {
      var password =  PasswordHasher.Hash(contract.Password);
        
-        var user= new User(new IdValue(contract.Id),
+        var user= new User(
                new NameValue(contract.Name),
                new EmailValue(contract.Email),
                new PasswordValue(password),

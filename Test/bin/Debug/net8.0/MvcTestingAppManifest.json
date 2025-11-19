@@ -1,5 +1,5 @@
 {
-  "API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\User\\RiderProjects\\Login\\API",
-  "Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\User\\RiderProjects\\Login\\Core",
-  "Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\User\\RiderProjects\\Login\\Data"
+  "API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/home\/joao\/RiderProjects\/LoginSystem\/API",
+  "Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/home\/joao\/RiderProjects\/LoginSystem\/Core",
+  "Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/home\/joao\/RiderProjects\/LoginSystem\/Data"
 }

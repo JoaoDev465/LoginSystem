@@ -23,17 +23,15 @@ public class FluentToken: IEntityTypeConfiguration<Token>
             .Property(x => x.AccessToken)
             .HasConversion(value => value.Value,
                 value => new AcessToken(value))
-            .HasMaxLength(200)
             .HasColumnName("AccessToken")
-            .HasColumnType("Nvarchar");
+            .HasColumnType("TEXT");
         
         builder
             .Property(x => x.RefreshToken)
             .HasConversion(value => value.Value,
                 value => new TokenRefresh(value))
-            .HasMaxLength(200)
             .HasColumnName("RefreshToken")
-            .HasColumnType("Nvarchar");
+            .HasColumnType("TEXT");
 
         builder
             .OwnsOne(x => x.LifeTime, lifetime =>

@@ -1,5 +1,6 @@
 ﻿using Core.Entity;
 using Core.Interfaces;
+using Core.ValueObject.UserEntityObject;
 using Data.Db;
 using Microsoft.EntityFrameworkCore;
 
@@ -21,7 +22,7 @@ public class UserRepositorie: IUserRepositorie
 
     public async  Task<User?> GetUSerByEmail(string email)
     {
-        return await  _context.User.AsNoTracking().FirstOrDefaultAsync(x=>x.Email.Email == email);
+        return await  _context.User.AsNoTracking().FirstOrDefaultAsync(x=>x.Email == new EmailValue(email));
     }
 
     public  async Task  UpdateUSer(User user)

@@ -1,37 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\RiderProjects\\Login\\Test\\Test.csproj": {}
+    "/home/joao/RiderProjects/LoginSystem/Test/Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\RiderProjects\\Login\\API\\API.csproj": {
+    "/home/joao/RiderProjects/LoginSystem/API/API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\RiderProjects\\Login\\API\\API.csproj",
+        "projectUniqueName": "/home/joao/RiderProjects/LoginSystem/API/API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\User\\RiderProjects\\Login\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\RiderProjects\\Login\\API\\obj\\",
+        "projectPath": "/home/joao/RiderProjects/LoginSystem/API/API.csproj",
+        "packagesPath": "/home/joao/.nuget/packages/",
+        "outputPath": "/home/joao/RiderProjects/LoginSystem/API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/joao/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\User\\RiderProjects\\Login\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\User\\RiderProjects\\Login\\Core\\Core.csproj"
+              "/home/joao/RiderProjects/LoginSystem/Core/Core.csproj": {
+                "projectPath": "/home/joao/RiderProjects/LoginSystem/Core/Core.csproj"
               },
-              "C:\\Users\\User\\RiderProjects\\Login\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\User\\RiderProjects\\Login\\Data\\Data.csproj"
+              "/home/joao/RiderProjects/LoginSystem/Data/Data.csproj": {
+                "projectPath": "/home/joao/RiderProjects/LoginSystem/Data/Data.csproj"
               }
             }
           }
@@ -40,20 +39,27 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.22, )"
+            },
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
               "version": "[8.0.20, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[8.1.4, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[8.1.4, )"
             },
             "microsoft.entityframeworkcore.sqlserver": {
               "target": "Package",
@@ -89,27 +95,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.414/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.121/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\User\\RiderProjects\\Login\\Core\\Core.csproj": {
+    "/home/joao/RiderProjects/LoginSystem/Core/Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\RiderProjects\\Login\\Core\\Core.csproj",
+        "projectUniqueName": "/home/joao/RiderProjects/LoginSystem/Core/Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\User\\RiderProjects\\Login\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\RiderProjects\\Login\\Core\\obj\\",
+        "projectPath": "/home/joao/RiderProjects/LoginSystem/Core/Core.csproj",
+        "packagesPath": "/home/joao/.nuget/packages/",
+        "outputPath": "/home/joao/RiderProjects/LoginSystem/Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/joao/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -122,11 +127,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -158,35 +158,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.414/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.121/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\User\\RiderProjects\\Login\\Data\\Data.csproj": {
+    "/home/joao/RiderProjects/LoginSystem/Data/Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\RiderProjects\\Login\\Data\\Data.csproj",
+        "projectUniqueName": "/home/joao/RiderProjects/LoginSystem/Data/Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\User\\RiderProjects\\Login\\Data\\Data.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\RiderProjects\\Login\\Data\\obj\\",
+        "projectPath": "/home/joao/RiderProjects/LoginSystem/Data/Data.csproj",
+        "packagesPath": "/home/joao/.nuget/packages/",
+        "outputPath": "/home/joao/RiderProjects/LoginSystem/Data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/joao/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\User\\RiderProjects\\Login\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\User\\RiderProjects\\Login\\Core\\Core.csproj"
+              "/home/joao/RiderProjects/LoginSystem/Core/Core.csproj": {
+                "projectPath": "/home/joao/RiderProjects/LoginSystem/Core/Core.csproj"
               }
             }
           }
@@ -195,17 +194,16 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
             "microsoft.entityframeworkcore.sqlserver": {
               "target": "Package",
               "version": "[8.0.20, )"
@@ -237,41 +235,40 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.414/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.121/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\User\\RiderProjects\\Login\\Test\\Test.csproj": {
+    "/home/joao/RiderProjects/LoginSystem/Test/Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\RiderProjects\\Login\\Test\\Test.csproj",
+        "projectUniqueName": "/home/joao/RiderProjects/LoginSystem/Test/Test.csproj",
         "projectName": "Test",
-        "projectPath": "C:\\Users\\User\\RiderProjects\\Login\\Test\\Test.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\RiderProjects\\Login\\Test\\obj\\",
+        "projectPath": "/home/joao/RiderProjects/LoginSystem/Test/Test.csproj",
+        "packagesPath": "/home/joao/.nuget/packages/",
+        "outputPath": "/home/joao/RiderProjects/LoginSystem/Test/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/joao/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\User\\RiderProjects\\Login\\API\\API.csproj": {
-                "projectPath": "C:\\Users\\User\\RiderProjects\\Login\\API\\API.csproj"
+              "/home/joao/RiderProjects/LoginSystem/API/API.csproj": {
+                "projectPath": "/home/joao/RiderProjects/LoginSystem/API/API.csproj"
               },
-              "C:\\Users\\User\\RiderProjects\\Login\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\User\\RiderProjects\\Login\\Core\\Core.csproj"
+              "/home/joao/RiderProjects/LoginSystem/Core/Core.csproj": {
+                "projectPath": "/home/joao/RiderProjects/LoginSystem/Core/Core.csproj"
               },
-              "C:\\Users\\User\\RiderProjects\\Login\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\User\\RiderProjects\\Login\\Data\\Data.csproj"
+              "/home/joao/RiderProjects/LoginSystem/Data/Data.csproj": {
+                "projectPath": "/home/joao/RiderProjects/LoginSystem/Data/Data.csproj"
               }
             }
           }
@@ -280,11 +277,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -336,7 +328,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.414/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.121/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

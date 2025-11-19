@@ -6,6 +6,12 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <RootNamespace>_5442</RootNamespace>
     </PropertyGroup>
+    
+    <ItemGroup>
+        <None Update="development.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\Core\Core.csproj" />
@@ -13,12 +19,15 @@
     </ItemGroup>
 
     <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.22" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.20" />
       <PackageReference Include="microsoft.entityframeworkcore.sqlserver" Version="8.0.20" />
       <PackageReference Include="microsoft.entityframeworkcore.tools" Version="8.0.20">
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         <PrivateAssets>all</PrivateAssets>
       </PackageReference>
+      <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="8.1.4" />
+      <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="8.1.4" />
       <PackageReference Include="system.identityModel.tokens.jwt" Version="8.14.0" />
     </ItemGroup>
 

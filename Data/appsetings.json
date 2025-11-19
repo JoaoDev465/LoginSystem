@@ -1,0 +1,6 @@
+{
+  "ConnectionStrings":{
+    "ConnectionString" : "Server=localhost,1433;DataBase=Study;Password=Dark1950@@;User Id=sa;TrustServerCertificate=true;Encrypt=true;"
+  }
+  
+}
